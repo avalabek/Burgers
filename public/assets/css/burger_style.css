@@ -1,7 +1,26 @@
+body{
+    text-align:center;
+    
+    
+    /* background-color: #349890;  */
+}
+h1{
+    font-family: 'Monoton',
+    cursive;
+    font-size:80px;
+    font-weight:lighter;
+    
+}
+h2{
+   font-family: 'Scope One',
+    serif;
+    font-size: 30px; 
+}
 li {
     padding: 5px;
     margin: 5px;
-    background: #faebd7;
+    background-color:transparent;
+    /* background: #61a4be; */
 }
 
 .label {
@@ -16,4 +35,11 @@ li {
 
 .form-group {
     margin-bottom: 5px;
+    background-color:transparent;
+}
+#ca {
+    background-color: pink;
+}
+.change-devoured {
+    background-color:yellow;
 }
