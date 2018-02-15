@@ -2,7 +2,10 @@ body{
     text-align:center;
     
     
-    /* background-color: #349890;  */
+    background-color: #2f4277; 
+}
+.color{
+    background-color: green;
 }
 h1{
     font-family: 'Monoton',
@@ -17,6 +20,8 @@ h2{
     font-size: 30px; 
 }
 li {
+    font-family: "Scope One", serif;
+    font-size:20px;
     padding: 5px;
     margin: 5px;
     background-color:transparent;
@@ -48,7 +53,7 @@ li {
     background-color: #824E12;
     border-color: #824E12;
 }
-
+/* the below isn't working: why? */
 .btn-burger:hover,
 .btn-burger:focus,
 .btn-burger:active,
