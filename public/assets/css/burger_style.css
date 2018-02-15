@@ -43,3 +43,48 @@ li {
 .change-devoured {
     background-color:yellow;
 }
+.btn-burger {
+    color: #ffffff;
+    background-color: #824E12;
+    border-color: #824E12;
+}
+
+.btn-burger:hover,
+.btn-burger:focus,
+.btn-burger:active,
+.btn-burger.active,
+.open .dropdown-toggle.btn-burger {
+    color: #ffffff;
+    background-color: #128216;
+    border-color: #824E12;
+}
+
+.btn-burger:active,
+.btn-burger.active,
+.open .dropdown-toggle.btn-burger {
+    background-image: none;
+}
+
+.btn-burger.disabled,
+.btn-burger[disabled],
+fieldset[disabled] .btn-burger,
+.btn-burger.disabled:hover,
+.btn-burger[disabled]:hover,
+fieldset[disabled] .btn-burger:hover,
+.btn-burger.disabled:focus,
+.btn-burger[disabled]:focus,
+fieldset[disabled] .btn-burger:focus,
+.btn-burger.disabled:active,
+.btn-burger[disabled]:active,
+fieldset[disabled] .btn-burger:active,
+.btn-burger.disabled.active,
+.btn-burger[disabled].active,
+fieldset[disabled] .btn-burger.active {
+    background-color: #824E12;
+    border-color: #824E12;
+}
+
+.btn-burger .badge {
+    color: #824E12;
+    background-color: #ffffff;
+}

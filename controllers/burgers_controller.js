@@ -19,6 +19,8 @@ router.post("/api/burgers", function(req, res) {
     burger.create(["burger_name", "devoured"], [req.body.burger_name, req.body.devoured], function(result) {
     //send back the id of the new burger
     res.json({ id: result.insertID });
+    //below has no effect
+    // res.redirect("/");
    });
 });
 router.put("/api/burgers/:id", function(req, res) {
@@ -32,12 +34,16 @@ router.put("/api/burgers/:id", function(req, res) {
         condition,
         function(result){
             if (result.changedRows === 0) {
-                //if no rows changed then 404
+                
                 return res.status(404).end();
             }
-            res.status(200).end();
+            //add res.redirect changes nothing
+            //  res.redirect("/");
+            // res.status(200).end();
+        res.status(200).redirect("/");
         }
     );
+    
 });
 // export for server.js to use
 module.exports = router;

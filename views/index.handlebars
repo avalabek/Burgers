@@ -1,54 +1,54 @@
 <br>
 <br>
-<h1>
-  
-    Devouring Burgers</h1>
+<h1>Devouring Burgers</h1>
 <div class=container>
   <div class=row>
     <div class="col-sm-3"></div>
     <div class="col-sm-3"></div>
     <div class="col-sm-3">
-      <br><br>
-<h2>Burgers you have eaten.</h2>
+    <br><br>
+    <h2>Burgers you have eaten.</h2>
 
-<ul style="list-style-type:none">
-  {{#each burgers}} {{#if devoured}}
-  <li>
-    {{id}} {{burger_name}}
+      <ul style="list-style-type:none">
+        {{#each burgers}} 
+          {{#if devoured}}
+        <li>
+          {{id}} 
+            {{burger_name}}
+        </li>
+          {{/if}} 
+        {{/each}}
+      </ul>
+    </div>
 
-
-  </li>
-
-  {{/if}} {{/each}}
-</ul>
-</div>
-<div class="col-sm-3">
-  <br><br>
-<h2>Burgers you haven't eaten.</h2>
-
-
-
-<ul style="list-style-type:none">
-    {{#each burgers}} 
-        {{#unless devoured}}
+    <div class="col-sm-3">
+    <br><br>
+    <h2>Burgers you haven't eaten.</h2>
+      <ul style="list-style-type:none">
+        {{#each burgers}} 
+          {{#unless devoured}}
           <li>
             {{this.id}}
               {{this.burger_name}}
-            
-            <form action="/{{this.id}}?_method=PUT" method="POST">
+              <form action="/{{this.id}}?_method=POST" method="POST">
                 <input type="hidden" name="devoured" value="true">
                 <button class="btn btn-sm btn-eat" style= "background-color: #444369; color:white; font-family='Monoton';"type="submit">Eat.</button>
-            </form>
-
-
-            {{!-- {{burger_name}}
-            <button class="change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}">
+              </form>
+              {{!-- these lines 38 to 41 when commented in and out; without them, 404 error, with them connection err
+              it finds an error in burger.js cb is not a function, also it console logs the condition and id which it 
+              is not doing without these lines. As far as I can tell, tehse lines only should change the text of button; as I
+              dont' want to do that, should be fine to console log them out. but seems they are key to error --}}
+            {{!-- {{burger_name}} --}}
+            {{!-- <button class="change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}">
             {{#if devoured}}That was good! {{else}}Eat your burger!{{/if}}
         </button> --}}
     </li>
 
-
-    {{!-- {{> burgers/burger-block devoured=true}} --}} {{/unless}} {{/each}}
+{{!-- this line below was for when partial was in but I could not get it to work
+    {{> burgers/burger-block devoured=true}}  --}}
+    
+    {{/unless}} 
+    {{/each}}
 </ul>
 </div>
 
