@@ -1,3 +1,20 @@
+/* font-family: 'Quicksand',
+sans-serif;
+font-family: 'Amatic SC',
+cursive;
+font-family: 'Comfortaa',
+cursive;
+font-family: 'Rajdhani',
+sans-serif;
+font-family: 'Poiret One',
+cursive; */
+.mainFont{
+    font-family: 'Poiret One',
+    cursive;
+    font-size: 22px;
+    text-align: left;
+    font-weight:bold;
+}
 body{
     text-align:center;
     
@@ -15,12 +32,14 @@ h1{
     
 }
 h2{
-   font-family: 'Scope One',
-    serif;
-    font-size: 30px; 
+   font-family: 'Poiret One',
+   cursive;
+    font-size: 35px;
+    font-weight:bold; 
 }
 li {
-    font-family: "Scope One", serif;
+    font-family: 'Scope One',
+    cursive;
     font-size:20px;
     padding: 5px;
     margin: 5px;
@@ -50,8 +69,8 @@ li {
 }
 .btn-burger {
     color: #ffffff;
-    background-color: #824E12;
-    border-color: #824E12;
+    background-color: #128216;
+    border-color: #128216;
 }
 /* the below isn't working: why? */
 .btn-burger:hover,
@@ -60,8 +79,8 @@ li {
 .btn-burger.active,
 .open .dropdown-toggle.btn-burger {
     color: #ffffff;
-    background-color: #128216;
-    border-color: #824E12;
+    background-color: #824E12;
+    border-color: #128216;
 }
 
 .btn-burger:active,
@@ -85,11 +104,57 @@ fieldset[disabled] .btn-burger:active,
 .btn-burger.disabled.active,
 .btn-burger[disabled].active,
 fieldset[disabled] .btn-burger.active {
-    background-color: #824E12;
-    border-color: #824E12;
+    background-color: #128216;
+    border-color: #128216;
 }
 
 .btn-burger .badge {
-    color: #824E12;
+    color: #128216;
+    background-color: #ffffff;
+}
+/* fushia button*/
+.btn-fushia {
+    color: #ffffff;
+    background-color: #821246;
+    border-color: #130269;
+}
+
+.btn-fushia:hover,
+.btn-fushia:focus,
+.btn-fushia:active,
+.btn-fushia.active,
+.open .dropdown-toggle.btn-fushia {
+    color: #ffffff;
+    background-color: #49247A;
+    border-color: #130269;
+}
+
+.btn-fushia:active,
+.btn-fushia.active,
+.open .dropdown-toggle.btn-fushia {
+    background-image: none;
+}
+
+.btn-fushia.disabled,
+.btn-fushia[disabled],
+fieldset[disabled] .btn-fushia,
+.btn-fushia.disabled:hover,
+.btn-fushia[disabled]:hover,
+fieldset[disabled] .btn-fushia:hover,
+.btn-fushia.disabled:focus,
+.btn-fushia[disabled]:focus,
+fieldset[disabled] .btn-fushia:focus,
+.btn-fushia.disabled:active,
+.btn-fushia[disabled]:active,
+fieldset[disabled] .btn-fushia:active,
+.btn-fushia.disabled.active,
+.btn-fushia[disabled].active,
+fieldset[disabled] .btn-fushia.active {
+    background-color: #821246;
+    border-color: #130269;
+}
+
+.btn-fushia .badge {
+    color: #821246;
     background-color: #ffffff;
 }
