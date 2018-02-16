@@ -1,10 +1,10 @@
-$(function() {
-    
-  $(".change-devoured").on("click", function(event) {
-  //  var id = 1;
-     var id = $(this).data("id");
+$(function () {
+
+  $(".change-devoured").on("click", function (event) {
+    //  var id = 1;
+    var id = $(this).data("id");
     // var newDevoured = $(this).data("newdevoured");
-var newDevoured = 1;
+    var newDevoured = 1;
     var newDevouredState = {
       devoured: newDevoured
     };
@@ -14,7 +14,8 @@ var newDevoured = 1;
       type: "PUT",
       data: newDevouredState
     }).then(
-      function() {
+      function (res) {
+        console.log(res);
         console.log("changed devoured to", newDevoured);
         // Reload the page to get the updated list
         location.reload();
@@ -22,7 +23,7 @@ var newDevoured = 1;
     );
   });
 
-  $(".create-form").on("submit", function(event) {
+  $(".create-form").on("submit", function (event) {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
 
@@ -37,7 +38,7 @@ var newDevoured = 1;
       type: "POST",
       data: newBurger
     }).then(
-      function() {
+      function () {
         console.log("created new burger");
         // Reload the page to get the updated list
         location.reload();
