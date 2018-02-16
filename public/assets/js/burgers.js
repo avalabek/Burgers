@@ -1,13 +1,10 @@
-// Make sure we wait to attach our handlers until the DOM is fully loaded.
-
-
-
 $(function() {
-    // Handlebars.registerPartial('burger-block', '{{burgers/burger-block}}')
+    
   $(".change-devoured").on("click", function(event) {
-    var id = $(this).data("id");
-    var newDevoured = $(this).data("newdevoured");
-
+  //  var id = 1;
+     var id = $(this).data("id");
+    // var newDevoured = $(this).data("newdevoured");
+var newDevoured = 1;
     var newDevouredState = {
       devoured: newDevoured
     };

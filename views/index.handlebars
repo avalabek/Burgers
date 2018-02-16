@@ -1,4 +1,4 @@
-<br>
+
 <br>
 <h1>Devouring Burgers</h1>
 <div class=container>
@@ -30,18 +30,20 @@
           <li>
             {{this.id}}
               {{this.burger_name}}
-              <form action="/{{this.id}}?_method=PUT" method="POST">
+
+              {{!-- <form action="/{{this.id}}?_method=PUT" method="POST">
                 <input type="hidden" name="devoured" value="true">
                 <button class="btn btn-sm btn-eat" style= "background-color: #444369; color:white; font-family='Monoton';"type="submit">Eat.</button>
-              </form>
+              </form> --}}
+
               {{!-- these lines 38 to 41 when commented in and out; without them, 404 error, with them connection err
               it finds an error in burger.js cb is not a function, also it console logs the condition and id which it 
               is not doing without these lines. As far as I can tell, tehse lines only should change the text of button; as I
               dont' want to do that, should be fine to console log them out. but seems they are key to error --}}
-            {{!-- {{burger_name}} --}}
-            {{!-- <button class="change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}">
-            {{#if devoured}}That was good! {{else}}Eat your burger!{{/if}}
-        </button> --}}
+             {{burger_name}} 
+            <button class="change-devoured btn-burger" data-id="{{id}}" data-newdevoured="{{devoured}}">
+            {{#if devoured}}That was good! {{else}}Eat.{{/if}}
+        </button> 
     </li>
 
 {{!-- this line below was for when partial was in but I could not get it to work
@@ -69,7 +71,7 @@
     <div class="form-group">
         
         <input type="text" id="ca" name="burger_name">
-        <button class="btn btn-sm btn-burger" type="submit" style="background-color: pink;">Submit</button>
+        <button class="btn btn-sm btn-burger" type="submit">Submit</button>
     </div>
 <div class="col-sm-12">
     <div class="form-group">

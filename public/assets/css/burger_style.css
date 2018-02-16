@@ -2,7 +2,7 @@ body{
     text-align:center;
     
     
-    background-color: #2f4277; 
+    background-color: #0c4b68; 
 }
 .color{
     background-color: green;
@@ -46,7 +46,7 @@ li {
     background-color: pink;
 }
 .change-devoured {
-    background-color:yellow;
+    background-color:rgb(92, 74, 54);
 }
 .btn-burger {
     color: #ffffff;
