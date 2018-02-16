@@ -34,10 +34,10 @@ router.put("/api/burgers/:id", function(req, res) {
         condition,
         function(result){
             console.log(result);
-            // if (result.changedRows === 0) {
+            if (result.changedRows === 0) {
                 
-            //     return res.status(404).end();
-            // }
+                return res.status(404).end();
+            }
             //add res.redirect changes nothing
             //  res.redirect("/");
             // res.status(200).end();

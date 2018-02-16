@@ -19,7 +19,7 @@ body{
     text-align:center;
     
     
-    background-color: #0c4b68; 
+    background-color: #11314b; 
 }
 .color{
     background-color: green;
@@ -36,6 +36,12 @@ h2{
    cursive;
     font-size: 35px;
     font-weight:bold; 
+    word-wrap: break-word;
+    text-align:center;
+}
+ul {
+    text-align:left;
+
 }
 li {
     font-family: 'Scope One',
@@ -45,6 +51,7 @@ li {
     margin: 5px;
     background-color:transparent;
     /* background: #61a4be; */
+    text-align:left;
 }
 
 .label {
@@ -62,7 +69,7 @@ li {
     background-color:transparent;
 }
 #ca {
-    background-color: pink;
+    background-color: rgb(173, 165, 167);
 }
 .change-devoured {
     background-color:rgb(92, 74, 54);
